@@ -1,83 +1,106 @@
-#include "clip.h"
+# <h1 align="center">Hi 👋, I'm Your Name</h1>
 
-namespace egc {
+<h3 align="center">🚀 Full Stack MERN Developer from India</h3>
 
-	//Cyrus-Beck clipping algorithm
-	//clipWindow specifies the vertices that define the clipping area in conterclockwise order
-	//and can represent any convex polygon
-	//function returns -1 if the line segment cannot be clipped
-	int lineClip_CyrusBeck(std::vector<vec3> clipWindow, vec3& p1, vec3& p2) {
-		//TO DO - implement the Cyrus-Beck line clipping algorithm - consult the laboratory work
+<div align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Poppins&weight=600&size=24&duration=3000&pause=1000&color=36BCF7&center=true&vCenter=true&width=600&lines=MERN+Stack+Developer;React+%7C+Node.js+%7C+MongoDB;Building+Scalable+Web+Applications;Always+Learning+New+Technologies" />
+</div>
 
-		if (p1.x == p2.x && p1.y == p2.y)
-		{
-			return -1;
-		}
+<br>
 
-		float tE = 0.0f;
-		float tL = 1.0f;
+<img align="right" alt="Coding" width="400" src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif">
 
-		float Dx = p2.x - p1.x;
-		float Dy = p2.y - p1.y;
+### 👨‍💻 About Me
 
-		int n = clipWindow.size();
-		
-		for (int i = 0; i < n; i++)
-		{
+* 🔭 Currently working on **MERN Stack Projects**
+* 🌱 Learning **Next.js, TypeScript & Cloud**
+* 👯 Looking to collaborate on **Open Source**
+* 💬 Ask me about **React, Node.js, Express, MongoDB**
+* ⚡ Fun Fact: **I turn coffee ☕ into code 💻**
 
-			vec3 PEi = clipWindow.at(i);
-			vec3 nextPEi = clipWindow.at((i+1)%n);
+<br>
 
-			float Ex = nextPEi.x - PEi.x;
-			float Ey = nextPEi.y - PEi.y;
+### 🌐 Connect With Me
 
+<p align="left">
+<a href="https://linkedin.com/in/yourprofile" target="blank">
+<img src="https://skillicons.dev/icons?i=linkedin" height="45" />
+</a>
+<a href="https://github.com/yourusername" target="blank">
+<img src="https://skillicons.dev/icons?i=github" height="45" />
+</a>
+<a href="mailto:your@email.com">
+<img src="https://skillicons.dev/icons?i=gmail" height="45" />
+</a>
+</p>
 
-			float Nix = Ey;
-			float Niy = -Ex;
+---
 
-			float P0_PEi_x = p1.x - PEi.x;
-			float P0_PEi_y = p1.y - PEi.y;
+## 🚀 Tech Stack
 
-			float PE = (Nix * Dx) + (Niy * Dy);
-			float PL = (Nix * P0_PEi_x) + (Niy * P0_PEi_y);
+<p align="center">
+<img src="https://skillicons.dev/icons?i=html,css,js,react,nodejs,express,mongodb,redux,tailwind,bootstrap,git,github,vscode,postman" />
+</p>
 
-			if (PE != 0.0f)
-			{
-				float t = PL / (-PE);
+---
 
-				if (PE < 0)
-				{
-					tE = std::max(tE, t);
-				}
-				else
-				{
-					tL = std::min(tL, t);
-				}
-			}
-			else
-			{
-				if (PL > 0)
-					return -1;
-			}
+## 📊 GitHub Stats
 
-		}
+<div align="center">
 
-		if (tE > tL)
-			return -1;
-		else
-		{
-			vec3 origP1 = p1;
+<img height="180em" src="https://github-readme-stats.vercel.app/api?username=YOUR_USERNAME&show_icons=true&theme=tokyonight&hide_border=true"/>
 
-			p1.x = origP1.x + Dx * tE;
-			p1.y = origP1.y + Dy * tE;
-			
-			p2.x = origP1.x + Dx * tL;
-			p2.y = origP1.y + Dy * tL;
-			return 0;
-		}
+<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=YOUR_USERNAME&layout=compact&theme=tokyonight&hide_border=true"/>
 
-	}
+</div>
 
-	
-}
+---
 
+## 🔥 GitHub Streak
+
+<div align="center">
+
+<img src="https://streak-stats.demolab.com?user=YOUR_USERNAME&theme=tokyonight&hide_border=true"/>
+
+</div>
+
+---
+
+## 🏆 GitHub Trophies
+
+<div align="center">
+
+<img src="https://github-profile-trophy.vercel.app/?username=YOUR_USERNAME&theme=tokyonight&no-frame=true&row=1&column=7"/>
+
+  
+</div>
+
+---
+
+## 📈 Contribution Graph
+
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=YOUR_USERNAME&theme=tokyo-night&hide_border=true"/>
+
+---
+
+## 🐍 Contribution Snake
+
+<div align="center">
+
+![snake gif](https://github.com/YOUR_USERNAME/YOUR_USERNAME/blob/output/github-contribution-grid-snake.svg)
+
+</div>
+
+---
+
+## ✨ Visitor Count
+
+<p align="center">
+<img src="https://komarev.com/ghpvc/?username=YOUR_USERNAME&label=Profile%20Views&color=0e75b6&style=for-the-badge" />
+</p>
+
+---
+
+<h3 align="center">
+💙 Thanks for visiting my profile 💙
+</h3>

@@ -1,4 +1,4 @@
-# <h1 align="center">Hi 👋, I'm Your Name</h1>
+# <h1 align="center">Hi 👋, I'm Deep Prajapati</h1>
 
 <h3 align="center">🚀 Full Stack MERN Developer from India</h3>
 
@@ -12,8 +12,6 @@
 
 ### 👨‍💻 About Me
 
-* 🔭 Currently working on **MERN Stack Projects**
-* 🌱 Learning **Next.js, TypeScript & Cloud**
 * 👯 Looking to collaborate on **Open Source**
 * 💬 Ask me about **React, Node.js, Express, MongoDB**
 * ⚡ Fun Fact: **I turn coffee ☕ into code 💻**
